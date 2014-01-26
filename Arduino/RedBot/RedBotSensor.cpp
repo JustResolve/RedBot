@@ -49,7 +49,7 @@ boolean RedBotSensor::check()
   // Now we need to consider whether we're going to call a threshold or not.
   //  We'll do that by seeing if we have more than VOTE_PASS samples that are
   //  in the detection range.
-  for (byte i = 1; i<NUM_SAMPS; i++)
+  for (byte i = 0; i<NUM_SAMPS; i++)
   {
     // For the lightOnDark case, we're looking for an increase in the voltage,
     //  corresponding to a higher current in the receiver caused by more light
